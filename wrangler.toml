@@ -1,10 +1,10 @@
-name = "worker"
+name = "demo-2022-11-13"
 main = "./src/index.mjs"
 compatibility_date = "2022-09-08"
 
 [durable_objects]
-bindings = [{name = "COUNTER", class_name = "Counter"}]
+bindings = [{name = "DURABLISH", class_name = "DurableishCounter"}]
 
 [[migrations]]
 tag = "v1" # Should be unique for each entry
-new_classes = ["Counter"]
+new_classes = ["DurableishCounter"]
